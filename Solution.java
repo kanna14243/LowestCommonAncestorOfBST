@@ -19,13 +19,7 @@ public class Solution {
             return lowestCommonAncestor(root.right,p, q);
         }
         
-        if(root.val == p.val){
-            return p;
-        }
-        if(root.val == q.val){
-            return q;
-        }
-        return root;
+        return root ==p?p:root==q?q:root;
         
     }
 }
